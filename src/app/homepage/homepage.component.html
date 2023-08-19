@@ -1,15 +1,24 @@
 <div class="container" style="margin-top:4%;">
-    <h1 align="center" style="background-color: rgb(122, 177, 241);">DOGGAR</h1>
+    <h1 class="title" align="center" style="background-color: rgb(228, 188, 153);">DOGGAR.</h1>
     
     <div style="margin-top:2%;">
         <p>{{para1}}<br>{{para2}}</p>
         <br>
 
         <h3>Benefits</h3>
-        <div>
-            <ul>
-                <li *ngFor = "let b of benefits; let i = index">{{benefits[i]}}</li>
-            </ul>
+        <div class="row">
+            <div class="col-12">
+                <div style="float:left">
+                    <ul>
+                        <li *ngFor = "let b of benefits; let i = index">{{benefits[i]}}</li>
+                    </ul>
+                </div>
+            
+
+                <div style="float:right;margin:-2% 20% 0 0%" >
+                    <img src=favicon.ico class="img-responsive" style="max-height:200px;">
+                </div>
+            </div>
         </div>
         <br>
 
@@ -25,15 +34,26 @@
         </div>
         <br>
 
-        <a href="http://t.me/doggar" style="text-decoration: none;color: white">
-            <button class="btn btn-primary" >Telegram us to pitch an offer !</button>
-        </a>
-        <p style="background-color: lightgreen;margin-top: 0.5%;">{{para5}}</p>
-        <br>
+        <div class="row">
+            <div class="col-xs-12">
+            <a href="http://t.me/doggar" style="text-decoration: none;">
+                <button style="float: left;" class="btn btn-primary" >Telegram us to pitch an offer !
+                    <span style="float: right;" class="material-icons">telegram</span>
+                </button>
+            </a>
+            </div>
+        </div>
+        
+        <mat-card>
+            <mat-card-content>{{para5}}</mat-card-content>
+        </mat-card>
+        
     </div>
+
+    <!--mat-slide-toggle>Toggle me!</mat-slide-toggle-->
 
 </div>
 
 
-<app-footer style="background: rgb(122, 177, 241);"></app-footer>
+<app-footer></app-footer>
 

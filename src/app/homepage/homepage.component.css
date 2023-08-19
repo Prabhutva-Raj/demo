@@ -1,0 +1,24 @@
+.title{
+    font-family: 'Glacial Indifference', sans-serif;
+    font-weight: bold;                                             
+}
+
+
+.btn{
+    background-color: skyblue;
+    color: black;
+    font-family: 'Glacial Indifference', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    border: none;
+    
+}
+
+.btn:hover{
+    background-color:rgb(100, 200, 240);
+    font-size: 100.3%;
+}
+
+mat-card-content{
+    background-color: rgb(228, 188, 153);margin-top: 0.5%;
+}
